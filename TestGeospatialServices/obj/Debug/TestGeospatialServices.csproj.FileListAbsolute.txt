@@ -1,0 +1,1 @@
+G:\work\CloudSpatial\Sample code\sql patial service\TestGeospatialServices\obj\Debug\TestGeospatialServices.csprojResolveAssemblyReference.cache

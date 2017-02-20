@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WFS_Configuration>
+  <FeatureTypeList>
+    <FeatureType>
+      <Name>TESTSUSTRALIA</Name>
+      <TableName>TESTSUSTRALIA</TableName>
+      <GeometryColumn>Geom</GeometryColumn>
+      <FeatureIdColumn>FID</FeatureIdColumn>
+      <ConnectionString>Server=.\nhan;initial catalog=Gis;User Id=sa;Password=123;</ConnectionString>
+    </FeatureType>
+  </FeatureTypeList>
+</WFS_Configuration>

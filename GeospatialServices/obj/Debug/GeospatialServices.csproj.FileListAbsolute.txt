@@ -1,0 +1,5 @@
+G:\work\CloudSpatial\Sample code\sql patial service\GeospatialServices\bin\Debug\GeospatialServices.dll
+G:\work\CloudSpatial\Sample code\sql patial service\GeospatialServices\bin\Debug\GeospatialServices.pdb
+G:\work\CloudSpatial\Sample code\sql patial service\GeospatialServices\obj\Debug\GeospatialServices.csprojResolveAssemblyReference.cache
+G:\work\CloudSpatial\Sample code\sql patial service\GeospatialServices\obj\Debug\GeospatialServices.dll
+G:\work\CloudSpatial\Sample code\sql patial service\GeospatialServices\obj\Debug\GeospatialServices.pdb
