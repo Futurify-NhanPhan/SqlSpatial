@@ -1,0 +1,5 @@
+G:\new C data\Document\SqlSpatial\GeospatialServices\bin\Release\GeospatialServices.dll
+G:\new C data\Document\SqlSpatial\GeospatialServices\bin\Release\GeospatialServices.pdb
+G:\new C data\Document\SqlSpatial\GeospatialServices\obj\Release\GeospatialServices.csprojResolveAssemblyReference.cache
+G:\new C data\Document\SqlSpatial\GeospatialServices\obj\Release\GeospatialServices.dll
+G:\new C data\Document\SqlSpatial\GeospatialServices\obj\Release\GeospatialServices.pdb

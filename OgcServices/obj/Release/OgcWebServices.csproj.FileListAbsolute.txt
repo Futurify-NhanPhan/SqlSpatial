@@ -1,0 +1,8 @@
+G:\new C data\Document\SqlSpatial\OgcServices\bin\OgcWebServices.dll.config
+G:\new C data\Document\SqlSpatial\OgcServices\bin\OgcWebServices.dll
+G:\new C data\Document\SqlSpatial\OgcServices\bin\OgcWebServices.pdb
+G:\new C data\Document\SqlSpatial\OgcServices\bin\GeospatialServices.dll
+G:\new C data\Document\SqlSpatial\OgcServices\bin\GeospatialServices.pdb
+G:\new C data\Document\SqlSpatial\OgcServices\obj\Release\OgcWebServices.csprojResolveAssemblyReference.cache
+G:\new C data\Document\SqlSpatial\OgcServices\obj\Release\OgcWebServices.dll
+G:\new C data\Document\SqlSpatial\OgcServices\obj\Release\OgcWebServices.pdb
