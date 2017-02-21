@@ -31,35 +31,60 @@
       <ows:Role>PointOfContact</ows:Role>
     </ows:ServiceContact>
   </ServiceProvider>
-  <OperationsMetadata>
-    <ows:Operation ows:name="GetCapabilitites">
+  <ows:OperationsMetadata>
+    <ows:Operation name="GetCapabilities">
       <ows:DCP>
         <ows:HTTP>
-          <!--<ows:Get xlink:href="http://localhost:49241/servcies.wfs" />-->
-          <ows:Post />
+          <ows:Get xlink:href="http://cloudspatial.futurify.vn/service.wfs?SERVICE=WFS&amp;VERSION=1.1.0" xlink:type="simple"/>
+          <ows:Post xlink:href="http://cloudspatial.futurify.vn/service.wfs?SERVICE=WFS&amp;VERSION=1.1.0" xlink:type="simple"/>
         </ows:HTTP>
       </ows:DCP>
-      <ows:Parameter ows:name="AcceptVersions">
+      <ows:Parameter name="service">
+        <ows:Value>WFS</ows:Value>
+      </ows:Parameter>
+      <ows:Parameter name="AcceptVersions">
+        <ows:Value>1.0.0</ows:Value>
         <ows:Value>1.1.0</ows:Value>
       </ows:Parameter>
-      <ows:Parameter ows:name="AcceptFormats">
+      <ows:Parameter name="AcceptFormats">
         <ows:Value>text/xml</ows:Value>
       </ows:Parameter>
-      <ows:Parameter ows:name="Sections">
-        <ows:Value>ServiceIdentification</ows:Value>
-        <ows:Value>ServiceProvider</ows:Value>
-        <ows:Value>OperationsMetadata</ows:Value>
-        <ows:Value>FeatureTypeList</ows:Value>
-        <ows:Value>ServesGMLObjectTypeList</ows:Value>
-        <ows:Value>Filter_Capabilities</ows:Value>
+    </ows:Operation>
+    <ows:Operation name="DescribeFeatureType">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="http://cloudspatial.futurify.vn/service.wfs?SERVICE=WFS&amp;VERSION=1.1.0" xlink:type="simple"/>
+          <ows:Post xlink:href="http://cloudspatial.futurify.vn/service.wfs?SERVICE=WFS&amp;VERSION=1.1.0" xlink:type="simple"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="outputFormat">
+        <ows:Value>XMLSCHEMA</ows:Value>
+        <ows:Value>text/xml; subtype=gml/2.1.2</ows:Value>
+        <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
       </ows:Parameter>
     </ows:Operation>
-  </OperationsMetadata>
+    <ows:Operation name="GetFeature">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="http://cloudspatial.futurify.vn/service.wfs?SERVICE=WFS&amp;VERSION=1.1.0" xlink:type="simple"/>
+          <ows:Post xlink:href="http://cloudspatial.futurify.vn/service.wfs?SERVICE=WFS&amp;VERSION=1.1.0" xlink:type="simple"/>
+        </ows:HTTP>
+      </ows:DCP>
+      <ows:Parameter name="resultType">
+        <ows:Value>results</ows:Value>
+        <ows:Value>hits</ows:Value>
+      </ows:Parameter>
+      <ows:Parameter name="outputFormat">
+        <ows:Value>text/xml; subtype=gml/3.1.1</ows:Value>
+      </ows:Parameter>
+    </ows:Operation>
+  </ows:OperationsMetadata>
   <FeatureTypeList>
     <Operations>
       <Operation>Query</Operation>
     </Operations>
     <FeatureType>
+
       <Name>TESTSUSTRALIA</Name>
       <Title>USTRALIA</Title>
       <Abstract />
