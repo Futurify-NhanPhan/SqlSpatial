@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <WFS_Configuration>
   <FeatureTypeList>
-    <Operations>
-      <Operation>Query</Operation>
-    </Operations>
     <FeatureType>
       <Name>TESTSUSTRALIA</Name>
       <TableName>TESTSUSTRALIA</TableName>

@@ -23,7 +23,23 @@ namespace GeospatialServices.Ogc.Wfs
         public bool OperationListSpecified;
 
 
-       
+        private List<OperationType> _OperationList;
+
+        [XmlElement(ElementName = "Operation", Form = XmlSchemaForm.Unqualified)]
+        [DataMember]
+        public List<OperationType> OperationList
+        {
+            get
+            {
+                if (_OperationList == null)
+                {
+                    _OperationList = new List<OperationType>();
+                    OperationListSpecified = true;
+                }
+                return _OperationList;
+            }
+            set { _OperationList = value; OperationListSpecified = true; }
+        }
 
 
         private List<FeatureType> _FeatureTypesList;
@@ -43,23 +59,6 @@ namespace GeospatialServices.Ogc.Wfs
             set { _FeatureTypesList = value; }
         }
 
-        private List<OperationType> _OperationList;
-
-        [XmlElement(ElementName = "Operations", Form = XmlSchemaForm.Unqualified)]
-        [DataMember]
-        public List<OperationType> OperationList
-        {
-            get
-            {
-                if (_OperationList == null)
-                {
-                    _OperationList = new List<OperationType>();
-                    OperationListSpecified = true;
-                }
-                return _OperationList;
-            }
-            set { _OperationList = value; OperationListSpecified = true; }
-        }
 
 
 

@@ -6,5 +6,3 @@ G:\new C data\Document\SqlSpatial\OgcServices\bin\GeospatialServices.pdb
 G:\new C data\Document\SqlSpatial\OgcServices\obj\Release\OgcWebServices.csprojResolveAssemblyReference.cache
 G:\new C data\Document\SqlSpatial\OgcServices\obj\Release\OgcWebServices.dll
 G:\new C data\Document\SqlSpatial\OgcServices\obj\Release\OgcWebServices.pdb
-G:\new C data\Document\SqlSpatial\OgcServices\bin\App_Data\WFSConfiguration.xml
-G:\new C data\Document\SqlSpatial\OgcServices\bin\App_Data\WFSCapabilities.xml
