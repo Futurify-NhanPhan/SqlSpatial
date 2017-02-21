@@ -1,5 +1,5 @@
-﻿<?xml version="1.0"?>
-<WFS_Capabilities xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1.0">
+<?xml version="1.0"?>
+<wfs:WFS_Capabilities version="1.1.0" xmlns:inspire_common="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns="http://www.opengis.net/wfs" xmlns:gml="http://www.opengis.net/gml" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows" xmlns:wfs="http://www.opengis.net/wfs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs http://www.geostore.com/SCHEMAS/SCHEMAS_OPENGIS_NET//wfs/1.1.0/wfs.xsd">
   <ServiceIdentification>
     <ows:Title>WFS</ows:Title>
     <ows:Abstract>Web Feature Service</ows:Abstract>
@@ -56,9 +56,9 @@
     </ows:Operation>
   </OperationsMetadata>
   <FeatureTypeList>
-    <!--<Operations>
+    <Operations>
       <Operation>Query</Operation>
-    </Operations>-->
+    </Operations>
     <FeatureType>
       <Name>TESTSUSTRALIA</Name>
       <Title>USTRALIA</Title>
@@ -117,4 +117,4 @@
     </ogc:Scalar_Capabilities>
     <ogc:Id_Capabilities />
   </ogc:Filter_Capabilities>
-</WFS_Capabilities>
+</wfs:WFS_Capabilities>

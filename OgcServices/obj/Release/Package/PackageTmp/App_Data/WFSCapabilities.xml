@@ -56,7 +56,9 @@
     </ows:Operation>
   </OperationsMetadata>
   <FeatureTypeList>
-  
+    <!--<Operations>
+      <Operation>Query</Operation>
+    </Operations>-->
     <FeatureType>
       <Name>TESTSUSTRALIA</Name>
       <Title>USTRALIA</Title>
@@ -76,7 +78,7 @@
 
   </FeatureTypeList>
   <ServersGMLObjectTypeList>
-    
+
     <GMLObjectType>
       <Name>TESTSUSTRALIA</Name>
       <Title>World wide administration boundaries</Title>
@@ -86,11 +88,14 @@
     </GMLObjectType>
 
   </ServersGMLObjectTypeList>
-  
+
   <ogc:Filter_Capabilities>
     <ogc:Spatial_Capabilities>
       <ogc:GeometryOperands />
-      <ogc:SpatialOperators />
+      <ogc:SpatialOperators>
+
+        <ogc:SpatialOperator name="BBOX"/>
+      </ogc:SpatialOperators>
     </ogc:Spatial_Capabilities>
     <ogc:Scalar_Capabilities>
       <ogc:LogicalOperators />

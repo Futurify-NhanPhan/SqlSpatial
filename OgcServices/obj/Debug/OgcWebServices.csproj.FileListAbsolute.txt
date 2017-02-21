@@ -14,3 +14,5 @@ G:\new C data\Document\SqlSpatial\OgcServices\bin\GeospatialServices.pdb
 G:\new C data\Document\SqlSpatial\OgcServices\obj\Debug\OgcWebServices.dll
 G:\new C data\Document\SqlSpatial\OgcServices\obj\Debug\OgcWebServices.pdb
 G:\new C data\Document\SqlSpatial\OgcServices\bin\App_Data\WFSConfiguration.xml
+G:\new C data\Document\SqlSpatial\OgcServices\obj\Debug\OgcWebServices.csprojResolveAssemblyReference.cache
+G:\new C data\Document\SqlSpatial\OgcServices\bin\App_Data\WFSCapabilities.xml
