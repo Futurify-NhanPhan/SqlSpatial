@@ -53,8 +53,8 @@
     <ows:Operation name="DescribeFeatureType">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://cloudspatial.futurify.vn/service.wfs?SERVICE=WFS&amp;VERSION=1.1.0" xlink:type="simple"/>
-          <ows:Post xlink:href="http://cloudspatial.futurify.vn/service.wfs?SERVICE=WFS&amp;VERSION=1.1.0" xlink:type="simple"/>
+          <ows:Get xlink:href="http://cloudspatial.futurify.vn/service.wfs" xlink:type="simple"/>
+          <ows:Post xlink:href="http://cloudspatial.futurify.vn/service.wfs" xlink:type="simple"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="outputFormat">
@@ -66,8 +66,8 @@
     <ows:Operation name="GetFeature">
       <ows:DCP>
         <ows:HTTP>
-          <ows:Get xlink:href="http://cloudspatial.futurify.vn/service.wfs?SERVICE=WFS&amp;VERSION=1.1.0" xlink:type="simple"/>
-          <ows:Post xlink:href="http://cloudspatial.futurify.vn/service.wfs?SERVICE=WFS&amp;VERSION=1.1.0" xlink:type="simple"/>
+          <ows:Get xlink:href="http://cloudspatial.futurify.vn/service.wfs" xlink:type="simple"/>
+          <ows:Post xlink:href="http://cloudspatial.futurify.vn/service.wfs" xlink:type="simple"/>
         </ows:HTTP>
       </ows:DCP>
       <ows:Parameter name="resultType">
