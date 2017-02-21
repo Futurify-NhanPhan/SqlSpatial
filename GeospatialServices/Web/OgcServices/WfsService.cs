@@ -213,28 +213,29 @@ namespace GeospatialServices.Web.OgcServices
         /// <param name="context"></param>
         private void ProcessDescribeFeatureType(HttpResponse response, StringDictionary parameters)
         {
-            if (!String.IsNullOrEmpty(parameters[WfsParameters.OutputFormat]) && String.Compare(parameters[WfsParameters.OutputFormat], Declarations.GMLSFFormat) != 0)
-            {
-                SetResponseToServiceException(response, WfsExceptionCode.InvalidFormat, "Invalid OUTPUTFORMAT for DescribeFeatureType Request. Only " + Declarations.GMLSFFormat + "format is supported");
-                return;
-            }
+            //if (!String.IsNullOrEmpty(parameters[WfsParameters.OutputFormat]) && String.Compare(parameters[WfsParameters.OutputFormat], Declarations.GMLSFFormat) != 0)
+            //{
+            //    SetResponseToServiceException(response, WfsExceptionCode.InvalidFormat, "Invalid OUTPUTFORMAT for DescribeFeatureType Request. Only " + Declarations.GMLSFFormat + "format is supported");
+            //    return;
+            //}
 
-            byte[] featureTypeBytes = null;
+            //byte[] featureTypeBytes = null;
 
-            // Check if this is a WFS or WMS request and get the appropriate layers parameter
-            string layers = parameters[WfsParameters.TypeName];
+            //// Check if this is a WFS or WMS request and get the appropriate layers parameter
+            //string layers = parameters[WfsParameters.TypeName];
 
-            if (String.IsNullOrEmpty(layers))
-                throw new WfsFault(WfsExceptionCode.LayerNotDefined);
+            //if (String.IsNullOrEmpty(layers))
+            //    throw new WfsFault(WfsExceptionCode.LayerNotDefined);
 
-            ViewContext context = new ViewContext(parameters);
-            XmlSchema schema = FeatureCollection.GetFeatureSchema(context, false);
+            //ViewContext context = new ViewContext(parameters);
+            //XmlSchema schema = FeatureCollection.GetFeatureSchema(context, false);
 
-            using (MemoryStream memoryStream = new MemoryStream())
-            {
-                schema.Write(memoryStream);
-                featureTypeBytes = memoryStream.ToArray();
-            }
+            //using (MemoryStream memoryStream = new MemoryStream())
+            //{
+            //    schema.Write(memoryStream);
+            //    featureTypeBytes = memoryStream.ToArray();
+            //}
+            var featureTypeBytes = File.ReadAllBytes(Path.Combine(HttpContext.Current.Server.MapPath("~/App_Data"), "DescribeFeatureType.xml"));
             response.Clear();
             response.ContentType = "text/xml";
             response.OutputStream.Write(featureTypeBytes, 0, featureTypeBytes.Length);

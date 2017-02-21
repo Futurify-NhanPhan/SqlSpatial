@@ -1,0 +1,54 @@
+<xs:schema xmlns:gml="http://www.opengis.net/gml" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmlsf="http://www.opengis.net/gmlsf" xmlns="http://tempuri.org/mapcontext" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://tempuri.org/mapcontext" version="1.0.0">
+  <xs:import schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd" namespace="http://www.opengis.net/gml"/>
+  <xs:import schemaLocation="http://schemas.opengis.net/gml/3.1.1/profiles/gmlsfProfile/1.0.0/gmlsfLevels.xsd" namespace="http://www.opengis.net/gmlsf"/>
+  <xs:element name="TESTSUSTRALIA" substitutionGroup="gml:_Feature" type="TESTSUSTRALIAType"/>
+  <xs:complexType name="TESTSUSTRALIAType">
+    <xs:complexContent mixed="false">
+      <xs:extension base="gml:AbstractFeatureType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="FID">
+            <xs:simpleType>
+              <xs:restriction base="xs:integer"/>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element minOccurs="0" name="SA4_CODE11">
+            <xs:simpleType>
+              <xs:restriction base="xs:string"/>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element minOccurs="0" name="SA4_NAME11">
+            <xs:simpleType>
+              <xs:restriction base="xs:string"/>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element minOccurs="0" name="GCC_CODE11">
+            <xs:simpleType>
+              <xs:restriction base="xs:string"/>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element minOccurs="0" name="GCC_NAME11">
+            <xs:simpleType>
+              <xs:restriction base="xs:string"/>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element minOccurs="0" name="STE_CODE11">
+            <xs:simpleType>
+              <xs:restriction base="xs:string"/>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element minOccurs="0" name="STE_NAME11">
+            <xs:simpleType>
+              <xs:restriction base="xs:string"/>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element minOccurs="0" name="ALBERS_SQM">
+            <xs:simpleType>
+              <xs:restriction base="xs:unknown"/>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element minOccurs="0" name="Geom" type="gml:MultiPointPropertyType"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+</xs:schema>
