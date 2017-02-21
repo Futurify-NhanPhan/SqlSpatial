@@ -66,11 +66,18 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\WFSCapabilities.xml" />
-    <Content Include="App_Data\WFSConfiguration.xml">
+    <Content Include="App_Data\nhan.xml" />
+    <Content Include="App_Data\WFSCapabilities.xml">
+      <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="App_Data\WMSCapabilities.xml" />
+    <Content Include="App_Data\WFSConfiguration.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Data\WMSCapabilities.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\WMSConfiguration.xml" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
@@ -92,6 +99,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Properties\PublishProfiles\nhan-sqlSpatial - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\nhan-sqlSpatial - Web Deploy.pubxml" />
   </ItemGroup>

@@ -180,26 +180,28 @@ namespace GeospatialServices.Web.OgcServices
         private void ProcessGetCapabilities_1_1_0(HttpResponse response, StringDictionary parameters)
         {
             // deserialise GetCapabilities document
-            XmlSerializer deSerializer = new XmlSerializer(typeof(WFS_Capabilities), string.Empty);
-            FileStream readStream = new FileStream(Path.Combine(HttpContext.Current.Server.MapPath("~/App_Data"), "WFSCapabilities.xml"), FileMode.Open, FileAccess.Read);
-            WFS_Capabilities wfsCapabilities = (WFS_Capabilities)deSerializer.Deserialize(readStream);
-            readStream.Close();
+            //XmlSerializer deSerializer = new XmlSerializer(typeof(WFS_Capabilities), string.Empty);
+            //FileStream readStream = new FileStream(Path.Combine(HttpContext.Current.Server.MapPath("~/App_Data"), "WFSCapabilities.xml"), FileMode.Open, FileAccess.Read);
+            //WFS_Capabilities wfsCapabilities = (WFS_Capabilities)deSerializer.Deserialize(readStream);
+            //readStream.Close();
 
-            // Namespaces
-            XmlSerializerNamespaces namespaces = new XmlSerializerNamespaces();
+            //// Namespaces
+            //XmlSerializerNamespaces namespaces = new XmlSerializerNamespaces();
 
-            namespaces.Add(Declarations.Wfs110DefaultPrefix, Declarations.Wfs110DefaultNameSpace);
-            namespaces.Add(Declarations.Wfs110Prefix, Declarations.Wfs110NameSpace);
-            namespaces.Add(Declarations.OwsPrefix, Declarations.OwsNameSpace);
-            namespaces.Add(Declarations.OgcPrefix, Declarations.OgcNameSpace);
-            namespaces.Add(Declarations.XlinkPrefix, Declarations.XlinkNameSpace);
+            //namespaces.Add(Declarations.Wfs110DefaultPrefix, Declarations.Wfs110DefaultNameSpace);
+            //namespaces.Add(Declarations.Wfs110Prefix, Declarations.Wfs110NameSpace);
+            //namespaces.Add(Declarations.OwsPrefix, Declarations.OwsNameSpace);
+            //namespaces.Add(Declarations.OgcPrefix, Declarations.OgcNameSpace);
+            //namespaces.Add(Declarations.XlinkPrefix, Declarations.XlinkNameSpace);
 
-            // Serialize
-            XmlSerializer serializer = new XmlSerializer(typeof(GeospatialServices.Ogc.Wfs.WFS_Capabilities));
-            MemoryStream memoryStream = new MemoryStream();
-            serializer.Serialize(memoryStream, wfsCapabilities, namespaces);
+            //// Serialize
+            //XmlSerializer serializer = new XmlSerializer(typeof(GeospatialServices.Ogc.Wfs.WFS_Capabilities));
+            //MemoryStream memoryStream = new MemoryStream();
+            //serializer.Serialize(memoryStream, wfsCapabilities, namespaces);
 
-            byte[] buffer = memoryStream.ToArray();
+            //byte[] buffer = memoryStream.ToArray();
+            var buffer = File.ReadAllBytes(Path.Combine(HttpContext.Current.Server.MapPath("~/App_Data"), "nhan.xml"));
+          
             response.Clear();
             response.ContentType = "text/xml";
             response.OutputStream.Write(buffer, 0, buffer.Length);
